@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.sysdll.android.weatherapp"
+    android:versionCode="1"
+    android:versionName="1.0.0" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="19" />
+
+    <!-- Grant the network access permission -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- Grant the location access permission -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- Allows using PowerManager WakeLocks to keep processor from sleeping or screen from dimming -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- Permission required to use Alarm Manager -->
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    
+   
+    
+    <application
+        android:name="org.sysdll.android.weatherapp.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppBaseThemeNoActionBar" >
+        
+        <!-- Required for creating dialog of the ACRA report -->
+        <activity
+            android:name="org.acra.CrashReportDialog"
+            android:excludeFromRecents="true"
+            android:finishOnTaskLaunch="true"
+            android:launchMode="singleInstance"
+            android:theme="@style/AcraDialog" />
+        <activity
+            android:name="org.sysdll.android.weatherapp.MainActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="org.sysdll.android.weatherapp.BaseScreen" />
+        <activity android:name="org.sysdll.android.weatherapp.LocationBaseScreen" />
+        <activity android:name="org.sysdll.android.weatherapp.SettingsActivity" />
+        <activity android:name="org.sysdll.android.weatherapp.WeatherApplication" />
+        <!-- Required by the AdMob Ads SDK -->
+        <activity
+            android:name="com.google.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+
+        <receiver
+            android:name="org.sysdll.android.weatherapp.AlarmReceiver"
+            android:process=":remote" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="org.sysdll.android.weatherapp.AlarmService" >
+        </service>
+        
+         <meta-data android:name="com.google.android.gms.version"
+      android:value="@integer/google_play_services_version" />
+         
+    </application>
+
+</manifest>

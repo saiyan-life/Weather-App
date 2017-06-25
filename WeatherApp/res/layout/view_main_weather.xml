@@ -1,0 +1,113 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal|top"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    android:layout_marginRight="@dimen/activity_horizontal_margin"
+    android:layout_marginTop="@dimen/main_weather_vertical_margin" >
+
+    <!-- Current visual weather -->
+
+    <ImageView
+        android:id="@+id/ivCurrentWeather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:contentDescription="@string/icon_weather_condition"
+        android:src="@drawable/clear_sky_l" />
+
+    <!-- Temperature -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:gravity="right"
+        android:orientation="vertical" >
+
+        <!-- Main Temperature -->
+
+        <TextView
+            android:id="@+id/tvCurrentTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/main_temp_size" />
+
+        <!-- Maximum Temperature -->
+
+        <TextView
+            android:id="@+id/tvHTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/drawable_padding"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/temp_size" />
+
+        <!-- Minimum Temperature -->
+
+        <TextView
+            android:id="@+id/tvLTemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/drawable_padding"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/temp_size" />
+
+        <!-- Wind Speed -->
+
+        <TextView
+            android:id="@+id/tvWindSpeed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/drawable_padding"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/temp_size" />
+
+        <!-- Atmospheric pressure -->
+
+        <TextView
+            android:id="@+id/tvPressure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/drawable_padding"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/temp_size" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvReferences"
+        style="@style/references_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/ivCurrentWeather"
+        android:layout_marginTop="@dimen/reference_top_margin"
+        android:paddingBottom="@dimen/base_margin"
+        android:text="@string/date_ref_message" />
+
+    <TextView
+        android:id="@+id/tvTimestamp"
+        style="@style/references_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivCurrentWeather"
+        android:layout_marginTop="@dimen/reference_top_margin"
+        android:layout_toLeftOf="@+id/ivInfo"
+        android:paddingBottom="@dimen/base_margin" />
+
+    <!-- Info Icon Button -->
+
+    <ImageView
+        android:id="@+id/ivInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/ivCurrentWeather"
+        android:layout_marginTop="@dimen/reference_top_margin"
+        android:contentDescription="@string/icon_info"
+        android:onClick="infoOnClick"
+        android:paddingLeft="@dimen/base_margin"
+        android:src="@drawable/icon_info" />
+
+</RelativeLayout>

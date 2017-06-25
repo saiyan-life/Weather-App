@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="TypographyDashes">
+
+    <string name="ad_unit_name">Ad Banner</string>
+	<string name="ad_unit_id">ca-app-pub-xxxxxxxxxxxxxxxx/xxxxxxxxxx</string>
+
+</resources>

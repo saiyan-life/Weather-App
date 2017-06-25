@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <!-- Ad Banner -->
+
+    <include layout="@layout/view_ad_banner" />
+
+    <!-- Header -->
+
+    <include layout="@layout/view_header" />
+
+    <!-- Current Weather Information -->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <include layout="@layout/view_main_weather" />
+
+        <!-- Throbber -->
+
+        <include
+            android:id="@+id/mainThrobber"
+            layout="@layout/view_throbber"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <!-- Scrollable Forecast -->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <HorizontalScrollView
+            android:id="@+id/hsvForecast"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" >
+
+            <org.sysdll.android.weatherapp.utils.ui.HorizontalViewGallery
+                android:id="@+id/gForcast"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" />
+        </HorizontalScrollView>
+
+        <!-- Throbber -->
+
+        <include
+            android:id="@+id/forecastThrobber"
+            layout="@layout/view_throbber"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</LinearLayout>

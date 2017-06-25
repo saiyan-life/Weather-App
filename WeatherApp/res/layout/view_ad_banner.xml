@@ -1,0 +1,17 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal" >
+
+<!--     <com.google.ads.AdView -->
+<!--         android:id="@+id/adView" -->
+<!--         android:layout_width="match_parent" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:layout_gravity="center" -->
+<!--         ads:adSize="BANNER" -->
+<!--         ads:adUnitId="@string/ad_unit_id" -->
+<!--         ads:loadAdOnCreate="true" -->
+<!--         ads:testDevices="TEST_EMULATOR" /> -->
+
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="remind_days_array">
+        <item>6 days before</item>
+        <item>5 days before</item>
+        <item>4 days before</item>
+        <item>3 days before</item>
+        <item>2 days before</item>
+        <item>1 day before</item>
+        <item>on same day</item>
+    </string-array>
+
+</resources>

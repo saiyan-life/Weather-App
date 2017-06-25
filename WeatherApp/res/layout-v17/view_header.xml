@@ -1,0 +1,112 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlHeader"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal|top"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    android:layout_marginRight="@dimen/activity_horizontal_margin" >
+
+    <!-- Current Date -->
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/dcClock"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/base_margin"
+        android:drawablePadding="@dimen/drawable_padding"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/normal_text_size" />
+
+    <!-- Current Time -->
+
+    <TextClock
+        android:id="@+id/dcClock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tvDate"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/clock_text_size" />
+
+    <!-- Name of Location -->
+
+    <TextView
+        android:id="@+id/tvLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/dcClock"
+        android:layout_below="@+id/dcClock"
+        android:drawablePadding="@dimen/drawable_padding"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/normal_text_size" />
+
+    <!-- Search City Field -->
+
+    <ImageView
+        android:id="@+id/ivSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/dcClock"
+        android:contentDescription="@string/icon_search_desc"
+        android:onClick="searchOnClick"
+        android:src="@drawable/button_search" />
+
+    <org.sysdll.android.weatherapp.utils.ui.MyCustomEditText
+        android:id="@+id/etSearch"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dcClock"
+        android:layout_toLeftOf="@+id/ivSearch"
+        android:gravity="center"
+        android:hint="@string/hint_search"
+        android:imeOptions="actionSearch"
+        android:inputType="textPostalAddress"
+        android:paddingBottom="@dimen/base_margin"
+        android:paddingTop="@dimen/base_margin"
+        android:singleLine="true"
+        android:visibility="invisible" />
+    
+    <!-- Refresh Button -->
+
+    <ImageView
+        android:id="@+id/ivRefresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_below="@+id/ivUnit"
+        android:layout_marginTop="@dimen/base_margin"
+        android:contentDescription="@string/icon_refresh_desc"
+        android:onClick="refreshOnClick"
+        android:src="@drawable/button_refresh" />
+
+    <!-- Change temperature unit Button -->
+
+    <ImageView
+        android:id="@+id/ivUnit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/base_margin"
+        android:layout_toLeftOf="@+id/ivRefresh"
+        android:contentDescription="@string/icon_setting_desc"
+        android:onClick="unitOnChange"
+        android:src="@drawable/button_unit_c" />
+
+    <!-- Remind Button -->
+
+    <ImageView
+        android:id="@+id/ivRemind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/base_margin"
+        android:layout_toLeftOf="@+id/ivUnit"
+        android:contentDescription="@string/icon_search_desc"
+        android:onClick="remindOnClick"
+        android:src="@drawable/button_remind" />
+    
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="reference_grey">#CCCCCC</color>
+
+    <!-- Forecast gradient color from dark to light -->
+
+    <color name="forecast_grad_1">#29292A</color>
+    <color name="forecast_grad_2">#3B3A3B</color>
+    <color name="forecast_grad_3">#4C4B4C</color>
+    <color name="forecast_grad_4">#5E5C5D</color>
+    <color name="forecast_grad_5">#6F6C6E</color>
+    <color name="forecast_grad_6">#807D7F</color>
+    <!--     A63326 
+    C0392B
+    D55648
+    DD7569
+    E1847A
+    E8A39B
+    
+    -->
+    
+    <color name="throbber_bg">#7FFFFFFF</color>
+    
+    <color name="text_color">#000000</color>
+    <color name="forecast_text_color">#FFFFFF</color>
+
+</resources>

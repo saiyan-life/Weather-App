@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Weather App</string>
+
+    <!-- GPS debugging messages -->
+    <string name="location_service_disabled">Location service is unavailable!</string>
+
+    <!-- Network debugging messages -->
+    <string name="network_disabled">No network connection!</string>
+
+    <!-- Main Activity -->
+    <string name="timestamp_prefix">latest data: %1$s</string>
+    <string name="icon_setting_desc">Settings</string>
+    <string name="icon_refresh_desc">Refresh</string>
+    <string name="icon_search_desc">Search City</string>
+    <string name="icon_weather_condition">Weather</string>
+    <string name="icon_forecast_weather">Weather</string>
+    <string name="icon_info">Info</string>
+    <string name="date_ref_message">Data from OpenWeatherMap</string>
+    <string name="unit_c">&#x2103;</string>
+    <string name="unit_f">&#x2109;</string>
+    <string name="hint_search">SEARCH CITY</string>
+    
+    <!-- Dialog -->
+    <string name="dialog_enable">ENALBE</string>
+    <string name="dialog_cancel">@android:string/cancel</string>
+    <string name="dialog_ok">@android:string/ok</string>
+    
+    <!-- Weather Reminder Dialog -->
+    <string name="dialog_reminder_title">Weather Reminder</string>
+    <string name="hint_event_name">EVENT NAME</string>
+    <string name="dialog_remind">REMIND ME</string>
+    <string name="dialog_datepicker_title">Set Event Date</string>
+    <string name="dialog_timepicker_title">Set Event Time</string>
+    <string name="dialog_set">SET</string>
+    <string name="event_date_label">Event Date</string>
+    <string name="remind_day_label">Remind Me</string>
+    <string name="warning_empty_event">Enter event name.</string>
+
+    <!-- Weather Reminder -->
+    <string name="remind_title">Weather Forecast</string>
+    <string name="remind_message">Check the weather forecast for %1$s on %2$s!</string>
+
+    <!-- Error message -->
+    <string name="error_get_weather">The weather is not available now. Please try again later.</string>
+    <string name="error_get_forecast">The forecast is not available now. Please try again later.</string>
+    <string name="error_invalid_city">Invalid city name.</string>
+    <string name="error_empty_city">Enter the city name.</string>
+
+    <!-- Rate Me Dialog -->
+    <string name="rate_me_message">If you enjoy using us, please take a moment to rate it.\n\nThanks for your support!</string>
+    <string name="dialog_rate_me">RATE IT</string>
+    <string name="dialog_no">NEVER</string>
+    <string name="dialog_later">LATER</string>
+
+    <!-- Misc. -->
+    <string name="feedback_title">About</string>
+    <string name="feedback_message">
+        Got some feedback? Send a message to saiyan.libre@gmail.com and we\'ll get back to you as quick as we can.
+        it\'s designed and developed by Yassine Mellas.
+        &#169; sysdll.org 2017. All rights reserved.
+        </string>
+
+    
+    <string name="contact_email">saiyan.libre@gmail.com</string>
+    
+        
+    
+    
+</resources>

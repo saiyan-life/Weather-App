@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+For the complete list of parameters you can use to configure the Google Analytics implementation.
+Please check https://developers.google.com/analytics/devguides/collection/android/parameters
+-->
+
+
+<!--
+The additional attributes in <resources> tag used to
+suppress that warning from lint checker which may warn you about the use of the figure dash ('-') in your tracking ID
+-->
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="TypographyDashes">
+
+    <!-- Replace placeholder ID with your tracking ID -->
+    <!-- Tracking ID for Weminder -->
+    <string name="ga_trackingId">UA-XXXXXXXX-X</string>
+
+    <!-- Enable automatic activity tracking -->
+    <bool name="ga_autoActivityTracking">true</bool>
+
+    <!-- The screen names that will appear in reports -->
+    <string name="com.cs.android.weminder.MainActivity">Main Screen</string>
+
+    <!-- Enable automatic exception tracking -->
+    <bool name="ga_reportUncaughtExceptions">true</bool>
+
+</resources>
