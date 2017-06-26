@@ -1,4 +1,12 @@
 # Weather-App
+
+* The weather app is an Android Weather Application makes use of an open-source OpenWeatherMap API to aquire the free weather data and forecast data for visualizing weather information on client-side.(i.e. The Android Application).
+* The weather app also provides the weather alert to remind the user to check the forecast for weather conditions before any coming events.
+* The application has been developed on eclipse Juno and the android developement tools(ADT) plugin.
+* The Application uses Android 2.3+ (API Level 9) as the minSdkVersion and Android 4.4 (API Level 19) as the targetSdkVersion.
+* The Application requires Google Play Services APIs.
+* Note: this is only the most important classes in my code, I ignored many java code as well as xml code, the full project with apk file is here https://github.com/saiyan-life/Weather-App
+
 # Screenshots
 ![alt text](https://scontent-mad1-1.xx.fbcdn.net/v/t34.0-12/19244220_10154632290596716_1299690962_n.png?oh=ba8c2fa95adea47d4fbc51c564035edc&oe=5952B41B)
 ![alt text](https://scontent-mad1-1.xx.fbcdn.net/v/t34.0-12/19244197_10154632290421716_734141474_n.png?oh=1aa503bf37a65b08067f66fef7172aa9&oe=59529A28)
